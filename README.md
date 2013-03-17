@@ -21,7 +21,7 @@ This project has the following dependencies:
 ```html
 	<script src="/components/jquery/jquery.js"></script>
 	<script src="/components/underscore/underscore.js"></script>
-	<script src="/components/container-queries/container-queries.js"></script>
+	<script src="/components/container-queries/dist/container-queries.js"></script>
 ```
 ### 3. Instantiate library
 
