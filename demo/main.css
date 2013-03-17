@@ -48,9 +48,7 @@ hr {
  * Module layout
  */
 .module {
-  margin-top: 2em;
-  border-top: 1px solid #cccccc;
-  padding-top: 1em; }
+  margin-top: 2em; }
   .module:first-child {
     margin-top: 0; }
 
