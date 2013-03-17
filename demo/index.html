@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Modules (Demo)</title>
+	<link rel="stylesheet" href="../components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="../demo/main.css">
+</head>
+<body>
+
+	<div class="view">
+
+		<div class="outer">
+
+			<header class="outer__head">
+
+				<h1>Responsive Modules.</h1>
+
+			</header>
+
+			<div class="outer__step-title">
+				<h2>Everything seems great for responsive design at first. We get to adapt the layout depending on the device's viewport size&hellip;</h2>
+			</div>
+
+			<div class="layout">
+
+				<div class="layout__body module" data-rm-name="layout__body" data-rm-breakpoints="300">
+
+					<nav class="module toggle-nav js-toggle" data-rm-name="toggle-nav" data-rm-breakpoints="420">
+						<a class="toggle-nav__link js-toggle__link">Toggle Navigation</a>
+						<ul class="toggle-nav__list">
+							<li class="toggle-nav__list-item"><a href="#">Home</a></li>
+							<li class="toggle-nav__list-item"><a href="#">About Us</a></li>
+							<li class="toggle-nav__list-item"><a href="#">Portfolio</a></li>
+							<li class="toggle-nav__list-item"><a href="#">Team</a></li>
+							<li class="toggle-nav__list-item"><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+
+					<section class="module off-canvas js-toggle" data-rm-name="off-canvas" data-rm-breakpoints="300,600">
+						<div class="off-canvas__wrap">
+							<aside class="off-canvas__aux">
+								<p>This is some more content</p>
+							</aside>
+							<article class="off-canvas__main">
+								<p><a class="off-canvas__link js-toggle__link">Toggle extra</a></p>
+								<p>Here is the main part of the article.</p>
+							</article>
+						</div>
+					</section>
+
+				</div>
+
+				<div class="layout__aux module" data-rm-name="layout__aux" data-rm-breakpoints="300">
+
+					<nav class="module toggle-nav js-toggle" data-rm-name="toggle-nav" data-rm-breakpoints="420">
+						<a class="toggle-nav__link js-toggle__link">Toggle Navigation</a>
+						<ul class="toggle-nav__list">
+							<li class="toggle-nav__list-item"><a href="#">Home</a></li>
+							<li class="toggle-nav__list-item"><a href="#">About Us</a></li>
+							<li class="toggle-nav__list-item"><a href="#">Portfolio</a></li>
+							<li class="toggle-nav__list-item"><a href="#">Team</a></li>
+							<li class="toggle-nav__list-item"><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+
+					<div class="layout">
+
+						<div class="layout__body module" data-rm-name="layout__body" data-rm-breakpoints="300">
+
+							<section class="module grid-block" data-rm-name="grid-block" data-rm-breakpoints="300,800">
+								<div class="grid-block__wrap">
+									<article class="grid-block__item">Item 1</article>
+									<article class="grid-block__item">Item 2</article>
+									<article class="grid-block__item">Item 3</article>
+									<article class="grid-block__item">Item 4</article>
+									<article class="grid-block__item">Item 5</article>
+									<article class="grid-block__item">Item 6</article>
+								</div>
+							</section>
+
+						</div>
+
+						<div class="layout__aux module" data-rm-name="layout__aux" data-rm-breakpoints="300">
+
+							<section class="module off-canvas js-toggle" data-rm-name="off-canvas" data-rm-breakpoints="300,600">
+								<div class="off-canvas__wrap">
+									<aside class="off-canvas__aux">
+										<p><a class="off-canvas__link js-toggle__link">Toggle extra</a></p>
+										<p>This is some more content</p>
+									</aside>
+									<article class="off-canvas__main">
+										<p><a class="off-canvas__link js-toggle__link">Toggle extra</a></p>
+										<p>Here is the main part of the article.</p>
+									</article>
+								</div>
+							</section>
+
+						</div>
+
+					</div>
+
+					<section class="module off-canvas js-toggle" data-rm-name="off-canvas" data-rm-breakpoints="300,600">
+						<div class="off-canvas__wrap">
+							<aside class="off-canvas__aux">
+								<p><a class="off-canvas__link js-toggle__link">Toggle extra</a></p>
+								<p>This is some more content</p>
+							</aside>
+							<article class="off-canvas__main">
+								<p><a class="off-canvas__link js-toggle__link">Toggle extra</a></p>
+								<p>Here is the main part of the article.</p>
+							</article>
+						</div>
+					</section>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="../components/jquery/jquery.js"></script>
+	<script src="../components/underscore/underscore.js"></script>
+	<script src="../components/jquery-requestAnimationFrame/dist/jquery.requestAnimationFrame.js"></script>
+	<script src="../src/responsive-modules.js"></script>
+	<script>
+	$(function() {
+		// Simple toggling behaviour for 'toggle nav' and 'off-canvas'
+		$('.js-toggle').each(function() {
+			var $this = $(this);
+			var $link = $this.find('.js-toggle__link');
+			$link.click(function(e) {
+				$this.toggleClass('is-expanded');
+			});
+		});
+
+		// Start tracking responsive modules
+		var responsiveModules = new ResponsiveModules();
+	});
+	</script>
+
+</body>
+</html>

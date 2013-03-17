@@ -1,0 +1,8 @@
+{
+  "name": "jquery-requestAnimationFrame",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gnarf37/jquery-requestAnimationFrame.git"
+  }
+}
