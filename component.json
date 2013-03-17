@@ -1,5 +1,5 @@
 {
-  "name": "container-queries",
+  "name": "container-queries-demo",
   "version": "0.0.0",
   "dependencies": {
     "container-queries": "latest"
