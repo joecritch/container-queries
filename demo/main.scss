@@ -92,6 +92,8 @@ hr {
 
 .module {
 	margin-top: 2em;
+	border-top: 1px solid #ccc;
+	padding-top: 1em;
 	&:first-child {
 		margin-top: 0;
 	}
@@ -117,10 +119,10 @@ hr {
 		margin-left: -1em;
 		overflow: hidden;
 	}
-	.toggle-nav--max-420:not(.is-expanded) & {
+	.toggle-nav--max-width-420:not(.is-expanded) & {
 		display: none;
 	}
-	.toggle-nav--min-420 & {
+	.toggle-nav--min-width-420 & {
 		margin-left: -1em;
 		overflow: hidden;
 	}
@@ -138,10 +140,10 @@ hr {
 			padding-left: 1em;
 		}
 	}
-	.toggle-nav--max-420 & {
+	.toggle-nav--max-width-420 & {
 		border-bottom: 1px solid #eee;
 	}
-	.toggle-nav--min-420 & {
+	.toggle-nav--min-width-420 & {
 		float: left;
 		margin-left: 1em;
 		&+.toggle-nav__list-item {
@@ -161,7 +163,7 @@ hr {
 	@include viewport-medium-and-up {
 		display: none;
 	}
-	.toggle-nav--min-420 & {
+	.toggle-nav--min-width-420 & {
 		display: none;
 	}
 }
@@ -177,7 +179,7 @@ hr {
 .off-canvas__wrap {
 	width: 130%;
 	overflow: hidden;
-	.off-canvas--max-300 & {
+	.off-canvas--max-width-300 & {
 		width: 200%;
 	}
 }
@@ -197,7 +199,7 @@ hr {
 			left: 0;
 		}
 	}
-	.off-canvas:not(.is-expanded).off-canvas--min-600 & {
+	.off-canvas:not(.is-expanded).off-canvas--min-width-600 & {
 		left: 0;
 	}
 }
@@ -207,7 +209,7 @@ hr {
 	overflow: hidden;
 	background: #ccc;
 	max-width: 30em;
-	.off-canvas--max-300.is-expanded & {
+	.off-canvas--max-width-300.is-expanded & {
 		width: 50%;
 	}
 }
@@ -220,11 +222,11 @@ hr {
 		@include viewport-large {
 			width: 47%;
 		}
-		.off-canvas--min-600 & {
+		.off-canvas--min-width-600 & {
 			width: 47%;
 		}
 	}
-	.off-canvas--max-300.is-expanded & {
+	.off-canvas--max-width-300.is-expanded & {
 		// display: none;
 	}
 }
@@ -233,7 +235,7 @@ hr {
 	@include viewport-large {
 		display: none;
 	}
-	.off-canvas--min-600 & {
+	.off-canvas--min-width-600 & {
 		display: none;
 	}
 }
@@ -266,10 +268,10 @@ hr {
 	@include viewport-small {
 		width: 100%;
 	}
-	.grid-block--min-300.grid-block--max-800 & {
+	.grid-block--min-width-300.grid-block--max-width-800 & {
 		width: -webkit-calc(50% - 1em);
 	}
-	.grid-block--max-300 & {
+	.grid-block--max-width-300 & {
 		width: 100%;
 	}
 }
@@ -303,7 +305,7 @@ hr {
 	@include viewport-small {
 		width: 100%;
 	}
-	&.layout__body--max-300 {
+	&.layout__body--max-width-300 {
 		width: 100%;
 	}
 }
@@ -313,9 +315,6 @@ hr {
 	float: left;
 	width: 34%;
 	padding: 1em;
-	// margin-bottom: -999px;
-	// padding-bottom: 999px;
-	// resize: horizontal;
 	background: lightblue;
 	@include viewport-medium {
 		width: 100%;
@@ -323,7 +322,7 @@ hr {
 	@include viewport-small {
 		width: 100%;
 	}
-	&.layout__aux--max-300 {
+	&.layout__aux--max-width-300 {
 		width: 100%;
 	}
 }

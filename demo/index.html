@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Responsive Modules (Demo)</title>
-	<link rel="stylesheet" href="../components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="../demo/main.css">
 </head>
 <body>
@@ -14,12 +14,12 @@
 
 			<header class="outer__head">
 
-				<h1>Responsive Modules.</h1>
+				<h1>Responsive Modules<br>using Container Queries</h1>
 
 			</header>
 
 			<div class="outer__step-title">
-				<h2>Everything seems great for responsive design at first. We get to adapt the layout depending on the device's viewport size&hellip;</h2>
+				<h2>Do the ol' resizing of the browser, and see how these different responsive-patterned modules behave:</h2>
 			</div>
 
 			<div class="layout">
@@ -46,6 +46,17 @@
 								<p><a class="off-canvas__link js-toggle__link">Toggle extra</a></p>
 								<p>Here is the main part of the article.</p>
 							</article>
+						</div>
+					</section>
+
+					<section class="module grid-block" data-rm-name="grid-block" data-rm-breakpoints="300,800">
+						<div class="grid-block__wrap">
+							<article class="grid-block__item">Item 1</article>
+							<article class="grid-block__item">Item 2</article>
+							<article class="grid-block__item">Item 3</article>
+							<article class="grid-block__item">Item 4</article>
+							<article class="grid-block__item">Item 5</article>
+							<article class="grid-block__item">Item 6</article>
 						</div>
 					</section>
 
@@ -121,10 +132,9 @@
 
 	</div>
 
-	<script src="../components/jquery/jquery.js"></script>
-	<script src="../components/underscore/underscore.js"></script>
-	<script src="../components/jquery-requestAnimationFrame/dist/jquery.requestAnimationFrame.js"></script>
-	<script src="../src/responsive-modules.js"></script>
+	<script src="components/jquery/jquery.js"></script>
+	<script src="components/underscore/underscore.js"></script>
+	<script src="components/container-queries.js"></script>
 	<script>
 	$(function() {
 		// Simple toggling behaviour for 'toggle nav' and 'off-canvas'
@@ -136,8 +146,8 @@
 			});
 		});
 
-		// Start tracking responsive modules
-		var responsiveModules = new ResponsiveModules();
+		// Create one instance of the defined object.
+		new ContainerQueries();
 	});
 	</script>
 
