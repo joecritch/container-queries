@@ -1,0 +1,7 @@
+{
+  "name": "container-queries",
+  "version": "0.0.0",
+  "dependencies": {
+    "container-queries": "latest"
+  }
+}
