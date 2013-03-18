@@ -101,7 +101,6 @@ Here is the default configuration.
 		selectors: {
 			modules: '.iLoveCamels'
 		}
-	}
 	});
 ```
 
