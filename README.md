@@ -114,4 +114,5 @@ So, please get involved, and let me know if you'd like to become a regular contr
 + Add support for 'em'-based queries
 + Investigate and improved 'tick' performance
 + Make containers actually *aware* of what their modules width hypothetically would be (to allow for 'magic queries')
++ Declarative templating for conditional markup (via @smileyj68)
 
