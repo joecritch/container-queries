@@ -8,10 +8,10 @@ This library will toggle DOM classes on modules based on their container's break
 
 ### 1. Obtain files
 
-### via Twitter Bower
+**via Twitter Bower**
 `bower install container-queries`
 
-#### or manually
+**or manually**
 This project has the following dependencies:
 + jQuery (1.8+)
 + Underscore
@@ -37,11 +37,11 @@ A lot of the control is declared through HTML data attributes. There are **two r
 
 `data-rm-name="your-module-name" data-rm-breakpoints="300,600,800"`
 
-### Module name
+**Module name**
 
 `data-rm-name` can be repeated as many times as you need: it's just used as a way to explicitly reference the name of the main module used on that element.
 
-### Breakpoints
+**Breakpoints**
 
 `data-rm-breakpoints` is a comma-separated list of breakpoints. These are used for producing the relevant classes on the elements (*not* their containers).
 
@@ -51,7 +51,7 @@ For example, if you had breakpoints of '300,600,800', and a module (whose main c
 
 ## Demo
 
-You can view a demo of this by downloading the repo and opening the `./demo` folder. It's fairly basic, and just shows the benefit of using the library.
+You can view a demo of this by visiting the project's page, or by cloning the `gh-pages` branch.
 
 ## API
 
@@ -98,8 +98,8 @@ I'm looking for people to help out on this project. I don't have a huge amount o
 
 So, please get involved, and let me know if you'd like to become a regular contributor.
 
-- [ ] Add support for height queries
-- [ ] Add support for 'em'-based queries
-- [ ] Investigate and improved 'tick' performance
-- [ ] Make containers actually *aware* of what their modules width hypothetically would be (to allow for 'magic queries')
++ Add support for height queries
++ Add support for 'em'-based queries
++ Investigate and improved 'tick' performance
++ Make containers actually *aware* of what their modules width hypothetically would be (to allow for 'magic queries')
 
