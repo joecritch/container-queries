@@ -4,7 +4,7 @@ This library will toggle DOM classes on modules based on their container's break
 
 **N.B. I do not recommend using this on a production site. Mainly because I haven't yet. Treat this as a proof-of-concept, and please contribute where you can.**
 ```html
-<div data-rm-name="your-module-name" data-rm-breakpoints="300,600,800">
+<div class="your-module-name" data-rm-name="your-module-name" data-rm-breakpoints="300,600,800">
 
 </div>
 ```
