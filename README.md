@@ -10,10 +10,10 @@ This library will toggle DOM classes on modules based on their container's break
 ```
 ```css
 .your-module-name--max-width-300 {
-  // styling for a narrow module
+  /* styling for a narrow module */
 }
 .your-module-name--min-width-800 {
- // styling for a wide module
+ /* styling for a wide module */
 }
 ```
 
