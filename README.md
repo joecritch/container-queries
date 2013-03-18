@@ -3,6 +3,19 @@
 This library will toggle DOM classes on modules based on their container's breakpointed widths. In theory, this should replace a workflow of using CSS media queries, which can only currently query the overall viewport dimensions, and focus on providing breakpoints for every one of your 'module' instances.
 
 **N.B. I do not recommend using this on a production site. Mainly because I haven't yet. Treat this as a proof-of-concept, and please contribute where you can.**
+```html
+<div data-rm-name="your-module-name" data-rm-breakpoints="300,600,800">
+
+</div>
+```
+```css
+.your-module-name--max-width-300 {
+  // styling for a narrow module
+}
+.your-module-name--min-width-800 {
+ // styling for a wide module
+}
+```
 
 ## Getting Started
 
